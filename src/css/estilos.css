@@ -1,6 +1,7 @@
 /* LOGO CABEÇALHO E RODAPÉ*/
 .logo .imagem{
     width: 100px;
+    border-radius: 50%;
 }
 
 .logo{
@@ -14,10 +15,11 @@
     font-size: 17px;
     transition: 0.3s ease-in-out;
     font-weight: 800;
+    color: black;
 }
 
 .logo .titulo:hover{
-    color: #1ED760;
+    color: #3230C1;
 }
 
 
@@ -29,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 0;
+    padding: 20px 0;
     max-width: 1170px;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -64,7 +66,7 @@
 }
 
 .cabecalho .navegacao .menu .item a:hover{
-   background-color: #1ED760;
+   background-color: #3230C1;;
    color: white;
 }
 /* HEADER */
@@ -143,6 +145,49 @@
 }
 /* PAINEL */
 
+/* CONTADOR */
+
+.contador{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    height: 400px;
+}
+
+.contador h1, span{
+    color: #3230C1;
+}
+
+.contador h1{
+    font-size: 50px;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.contador span{
+    font-size: 40px;
+}
+
+.contador .unidade-de-temporizador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .tempo-container{
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+ }
+
+ @media (max-width: 760px ) {
+
+ }
+/* CONTADOR*/
 
 /* QUEM SOMOS */
 .quem-somos{
@@ -229,7 +274,7 @@
 }
 
 .rodape .redes-sociais a:hover{
-    background-color: #1ED760;
+    background-color: #3230C1;;
     transition: 0.3s ease-in-out;
 }
 
