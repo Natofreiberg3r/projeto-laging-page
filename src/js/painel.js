@@ -84,42 +84,4 @@ setaVoltar.addEventListener('click',function() {
         mostrarImagem();
 
 })
-
-
-
-
-
-// Função para obter a data do próximo sábado às 20:00
-function getNextSaturday20h() {
-    const now = new Date();
-    const nextSaturday = new Date();
-
-    // Se o dia atual não for sábado, ajusta para o próximo sábado
-    nextSaturday.setDate(now.getDate() + (6 - now.getDay() + 7) % 7);
-
-    // Ajusta para 20 horas
-    nextSaturday.setHours(20, 0, 0, 0);
-
-    return nextSaturday;
-}
-
-// Função para atualizar a contagem regressiva
-function updateCountdown() {
-    const now = new Date();
-    const eventDate = getNextSaturday20h();
-    const timeRemaining = eventDate - now;
-
-    if (timeRemaining >= 0) {
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-
-        document.getElementById("dias").innerText = days;
-        document.getElementById("horas").innerText = hours;
-        document.getElementById("minutos").innerText = minutes;
-    }
-}
-
-// Atualiza a contagem regressiva a cada minuto
-setInterval(updateCountdown, 1000);
  
